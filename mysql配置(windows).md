@@ -1,10 +1,12 @@
-# 下载
+# mysql的安装配置
+
+## 下载
 去[mysql官网](https://dev.mysql.com/downloads/mysql/)下载免安装版，我的版本为5.7.17
 
-# 环境变量
+## 环境变量
 此电脑->属性->高级系统设置->环境变量->Path中添加环境变量（如我把mysql解压到d盘，对应就添加D:\mysql-5.7.17-winx64\bin）
 
-# my.ini
+## 创建my.ini
 在解压的D:\mysql-5.7.17-winx64中新建my.ini（注意要用ANSI编码，可用记事本编辑），内容如下：
 
 [mysql]
@@ -24,7 +26,7 @@ character-set-server=utf8
 #创建新表时将使用的默认存储引擎
 default-storage-engine=INNODB
 
-# 安装mysql
+## 安装mysql
 * 以管理员身份运行cmd
 cd D:\mysql-5.7.17-winx64\bin
 * 命令1：mysqld --initialize   #直接初始化mysql，生成data文件夹中的文件。
@@ -34,7 +36,7 @@ cd D:\mysql-5.7.17-winx64\bin
 当出现"[SC] DeleteService 成功"后，重新输入命令2，则会出现"Service successfully installed."
 这时已成功安装数据库。
 
-# 登录mysql
+## 登录mysql
 * 输入命令： mysql -uroot -p密码 就可以登录，当不知道密码时，用下面的方法就可以重设密码
 * 编辑解压目录下的 my.ini文件，在[mysqld]这个条目下加入
 skip-grant-tables
@@ -44,7 +46,7 @@ skip-grant-tables
 输入命令：net start mysql   #启动
 这时在cmd里面输入mysql -u root -p不用密码可以登录。出现password：时，直接回车可以进入mysql。
 
-#更改密码
+## 更改密码
 * 进入mysql 数据库：
 mysql> use mysql;
 显示：
@@ -64,7 +66,7 @@ mysql> quit
 Bye
 改好之后，再修改一下my.ini这个文件，把之前加入的"skip-grant-tables"删除，保存退出再重启mysql就可以了。
 
-# 完善
+## 完善
 * 修改完毕。重启mysql服务。
 * 输入命令：mysql -uroot -p123txm    #登录mysql
 * 输入命令：alter user 'root'@'localhost' identified by '123';
