@@ -74,3 +74,8 @@ Bye
 * 以后可直接在命令行输入mysql -uroot -p
 Enter password:123
 就能登录mysql了。
+
+## 参考
+* [windows下mysql配置（第一次）](http://www.cnblogs.com/by330326/p/5608290.html)
+* [Windows上安装MySQL](http://blog.csdn.net/u013235478/article/details/50623693)
+* [在服务器上无法启动mysql服务 错误193 求高手指点](http://www.debugease.com/mysql/119481.html)
