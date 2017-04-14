@@ -1,11 +1,11 @@
 ## 连接数据库
 * cmd->输入命令mysql -uroot -p -> 回车 -> 输入密码123
 ## 数据库基本操作
-* mysql> CREATE DATABASE PRJ;  #创建数据库
+* **mysql> CREATE DATABASE PRJ;  #创建数据库**
   
   Query OK, 1 row affected (0.11 sec)
 
-* mysql> show databases;  #显示所有数据库
+* **mysql> show databases;  #显示所有数据库
   
   +--------------------+
   
