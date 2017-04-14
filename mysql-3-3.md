@@ -2,21 +2,26 @@
 * cmd->输入命令mysql -uroot -p -> 回车 -> 输入密码123
 ## 数据库基本操作
 * mysql> CREATE DATABASE PRJ;  #创建数据库
-<p>Query OK, 1 row affected (0.11 sec)</p>
+  
+  Query OK, 1 row affected (0.11 sec)
 
 * mysql> show databases;  #显示所有数据库
-<p>
-+--------------------+
-| Database           |
-+--------------------+
-| information_schema |
+
+  
+  +--------------------+
+  
+  | Database           |
+  
+  +--------------------+
+  
+  | information_schema |
 | mysql              |
 | performance_schema |
 | prj                |
 | sys                |
 +--------------------+
 5 rows in set (0.19 sec)
-</p>
+
 
 * mysql> show tables;   #显示所有表
 <p>ERROR 1046 (3D000): No database selected</p>
