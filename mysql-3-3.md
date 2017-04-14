@@ -45,15 +45,24 @@
     -> ); 
   Query OK, 0 rows affected (0.54 sec)
 * mysql> show tables;  #显示所有表
-<p>+---------------+</p>
-<p>| Tables_in_prj |</p>
-<p>+---------------+</p>
-| student       |
-+---------------+
-1 row in set (0.00 sec)
+  
+  +---------------+
+  
+  | Tables_in_prj |
+  
+  +---------------+
+  
+  | student       |
+  
+  +---------------+
+  
+  1 row in set (0.00 sec)
 
 * mysql> ALTER TABLE Student ADD S_entrance DATE;  #向Student表添加“入学时间”列 数据类型为日期型
-Query OK, 0 rows affected (0.63 sec)
-Records: 0  Duplicates: 0  Warnings: 0
+  
+  Query OK, 0 rows affected (0.63 sec)
+  
+  Records: 0  Duplicates: 0  Warnings: 0
 * mysql> DROP TABLE student CASCADE;  #删除Student表的所有相关依赖对象（如视图）
-Query OK, 0 rows affected (0.17 sec)
+  
+  Query OK, 0 rows affected (0.17 sec)
