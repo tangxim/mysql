@@ -45,9 +45,9 @@
     -> ); 
   Query OK, 0 rows affected (0.54 sec)
 * mysql> show tables;  #显示所有表
-+---------------+
-| Tables_in_prj |
-+---------------+
+<p>+---------------+</p>
+<p>| Tables_in_prj |</p>
+<p>+---------------+</p>
 | student       |
 +---------------+
 1 row in set (0.00 sec)
