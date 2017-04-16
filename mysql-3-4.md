@@ -8,7 +8,7 @@
       -> VALUES('201215121','李勇','男',20,'CS');
   
   Query OK, 1 row affected (0.12 sec)
-## 单表查询
+## 单表查询（SELECT语句）
 * **查询所有数据信息**
   
   **SELECT * FROM 表名;**
@@ -113,6 +113,15 @@
   +--------+----------------+----------+------------+
   
   4 rows in set (0.00 sec)
+ * **消除重复行** 
+  select distinct sno from sc;
+  * **条件语句WHERE**
+    
+    select sname from student where sdept='cs';
+    
+    select sname,sage from student where sage<20;
+    
+    select distinct sno from sc where grade<60;
 ## Student表数据
   
   mysql> INSERT INTO Student
