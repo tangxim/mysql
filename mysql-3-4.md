@@ -113,8 +113,8 @@
   +--------+----------------+----------+------------+
   
   4 rows in set (0.00 sec)
-## 建立Student表
-  
+## Student表数据
+  
   mysql> INSERT INTO Student
       
       -> (Sno,Sname,Ssex,Sage,Sdept)
@@ -139,4 +139,72 @@
       
       -> (Sno,Sname,Ssex,Sage,Sdept)
       
-      -> VALUES('201215125','张立','男',19,'IS');
+      -> VALUES('201215125','张立','男',19,'IS');
+## Course表数据
+mysql> INSERT INTO Course
+    -> (Cno,Cname,Ccredit)
+    -> VALUES('1','数据库',4);
+
+mysql> INSERT INTO Course
+    -> (Cno,Cname,Ccredit)
+    -> VALUES('2','数学',2);
+
+mysql> INSERT INTO Course
+    -> (Cno,Cname,Ccredit)
+    -> VALUES('3','信息系统',4);
+
+mysql> INSERT INTO Course
+    -> (Cno,Cname,Ccredit)
+    -> VALUES('4','操作系统',3);
+
+mysql> INSERT INTO Course
+    -> (Cno,Cname,Ccredit)
+    -> VALUES('5','数据结构',4);
+
+mysql> INSERT INTO Course
+    -> (Cno,Cname,Ccredit)
+    -> VALUES('6','数据处理',2);
+
+mysql> INSERT INTO Course
+    -> (Cno,Cname,Ccredit)
+    -> VALUES('7','PASCAL语言',4);
+## SC表数据
+mysql> INSERT INTO SC
+    -> (Sno,Cno,Grade)
+    -> VALUES('201215121','1',92);
+
+mysql> INSERT INTO SC
+    -> (Sno,Cno,Grade)
+    -> VALUES('201215121','2',85);
+
+mysql> INSERT INTO SC
+    -> (Sno,Cno,Grade)
+    -> VALUES('201215121','3',88);
+
+mysql> INSERT INTO SC
+    -> (Sno,Cno,Grade)
+    -> VALUES('201215122','2',90);
+
+mysql> INSERT INTO SC
+    -> (Sno,Cno,Grade)
+    -> VALUES('201215122','3',80);
+## Course表外码Cpno数据
+mysql> UPDATE Course
+    -> SET Cpno='5'
+    -> WHERE Cno='1';
+
+mysql> UPDATE Course
+    -> SET Cpno='1'
+    -> WHERE Cno='3';
+
+mysql> UPDATE Course
+    -> SET Cpno='6'
+    -> WHERE Cno='4';
+
+mysql> UPDATE Course
+    -> SET Cpno='7'
+    -> WHERE Cno='5';
+
+mysql> UPDATE Course
+    -> SET Cpno='6'
+    -> WHERE Cno='7';
