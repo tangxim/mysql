@@ -113,9 +113,10 @@
   +--------+----------------+----------+------------+
   
   4 rows in set (0.00 sec)
- * **消除重复行** 
-  select distinct sno from sc;
-  * **条件语句WHERE**
+* **消除重复行** 
+    
+    select distinct sno from sc;
+* **条件语句WHERE**
     
     select sname from student where sdept='cs';
     
